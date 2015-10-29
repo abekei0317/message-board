@@ -14,7 +14,7 @@
 
 <%= form_for(Message.new) do |f| %>
 
-<%= if @message.errors.present? %>
+<% if @message.errors.present? %>
 
     <div class="alert alert-danger">
       
