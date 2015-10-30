@@ -1,18 +1,7 @@
 <div class="panel panel-default">
-  <div class="row">
-  <div class="col-sm-2"></div>
-  <div class="col-sm-8"></div>
-  <div class="col-sm-2"></div>
-</div>
 
   <div class="panel-heading">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
       メッセージ一覧
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
   </div>
   
   <div class="panel-body">
@@ -32,16 +21,11 @@
 
 <%= form_for(Message.new, html: {class: "form-horizontal"}) do |f| %> 
   <div class="form-group">
-    <div class="row">
-      <div class="col-sm-2">
+    <label class="col-sm-2 control-label">名前：</label>
+      <div class="col-sm-6">
+        <%= f.text_field :name,  class: "form-control"  %>
       </div>
-      <div class="col-sm-8">
-        <label for="inputname", class="control-label">名前：</label>
-        <%= f.text_field :name, class: "form-control"  %>
-      </div>
-      <div class="col-sm-2">
-      </div>
-    </div>
+      <div class="col-sm-4"></div>
   </div>
   
   <div class="form-group">
